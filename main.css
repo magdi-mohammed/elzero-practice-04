@@ -1,0 +1,298 @@
+/* start global */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.container {
+    max-width: 1170px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin: auto;
+}
+
+a[href="#"] {
+    color: inherit;
+    text-decoration: none;
+}
+
+.author {
+    font-size: 12px;
+}
+
+/* end global */
+
+/* start nav bar */
+
+#main-nav {
+    /* for debeug */
+/*    background: #b4b4b4;*/
+    
+    min-height: 100px;
+}
+
+#main-nav .nav-inner {
+    padding-top: 30px;
+    padding-bottom: 23px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid #f4f4f4;
+}
+
+/***
+    left side
+***/
+
+#main-nav .nav-inner .left-side {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+/* logo */
+
+#main-nav .nav-inner .logo-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+#main-nav .nav-inner .logo-box .logo {
+    display: flex;
+    width: 45px;
+    height: 45px;
+    background: #6a65d8;
+    color: #eee;
+    font-weight: bold;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    box-shadow: 
+        0px -6px 0px #ffcdcd,
+        0px -12px 0px #ffe9e3;
+}
+
+#main-nav .nav-inner .logo-box .logo-txt {
+    color: #6a65d8;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-left: 1px;
+    font-size: 1.4em;
+}
+
+/* links */
+
+.links-list {
+    list-style: none;
+    display: flex;
+    width: 200px;
+    justify-content: space-between;
+}
+
+.links-list .list-item {
+    color: #7e7e7e;
+}
+
+.links-list .list-item .link {}
+
+/***
+    right side
+***/
+
+#main-nav .nav-inner .right-side {
+    width: 60%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+#main-nav .nav-inner .right-side .search {
+    
+}
+
+#main-nav .nav-inner .right-side .search input[type="search"] {
+    width: 200px;
+    height: 30px;
+    padding-left: 10px;
+    border: 2px solid #f4f4f4;
+    border-radius: 5px;
+}
+
+#main-nav .nav-inner .right-side .search input[type="search"]::placeholder {
+    color: #f4f4f4;
+}
+
+#main-nav .nav-inner .right-side .register {
+    margin-left: 40px;
+}
+
+#main-nav .nav-inner .right-side .register .log-in {
+    margin-right: 5px;
+    color: #7e7e7e;
+}
+
+#main-nav .nav-inner .right-side .register .sign-up {
+    margin-left: 5px;
+    background: #6a65d8;
+    color: #fff;
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* end nav bar */
+
+/* start section quotes */
+
+#quotes {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#quotes .heading {
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* start of cards */
+
+#quotes .cards {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 30px
+}
+
+#quotes .cards .card-box {
+    min-width: 280px;
+    margin-right: 10px;
+}
+
+#quotes .cards .card-box .card {
+    min-width: 100%;
+    height: 400px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background: #777;
+    color: #fff;
+}
+
+/* specify custom cards width */
+
+/* Paul Rand */
+#quotes .cards .card-box:nth-of-type(1) .card:nth-of-type(1) {
+    height: 195px;
+    padding-top: 35px;
+    padding-left: 20px;
+    background: linear-gradient(to bottom, rgba(112,112,112,0.5) 40%, rgba(112,112,112,0.5)), url('photos/person-1.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Egyptian Proverbs */
+#quotes .cards .card-box:nth-of-type(1) .card:nth-of-type(2) {
+    height: 195px;
+    padding-top: 30px;
+    padding-left: 20px;
+    background: linear-gradient(to bottom, rgba(142,141,211,0.8) 40%, rgba(142,141,211,0.8)), url('photos/abu-simbel.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Bill Gates */
+#quotes .cards .card-box:nth-of-type(2) .card:nth-of-type(1) {
+    background: #f00;
+    padding-top: 30px;
+    padding-left: 20px;
+    background: url('photos/person-2.jpg');
+    background-size: cover;
+    background-position: left;
+}
+
+#quotes .cards .card-box:nth-of-type(2) .card:nth-of-type(1) .card-txt {
+    width: 100px;
+}
+
+/* Muhammad ali */
+#quotes .cards .card-box:nth-of-type(3) .card:nth-of-type(1) {
+    height: 295px;
+    padding-top: 10px;
+    padding-left: 20px;
+    background: linear-gradient(to bottom, rgba(112,112,112,0.5) 40%, rgba(112,112,112,0.5)), linear-gradient(to bottom, rgba(112,112,112,0.5), rgba(112,112,112,0.1)), url('photos/person-3.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#quotes .cards .card-box:nth-of-type(3) .card:nth-of-type(1) .card-txt {
+    width: 200px;
+}
+
+/* Muhammad ali quote */
+#quotes .cards .card-box:nth-of-type(3) .card:nth-of-type(2) {
+    height: 95px;
+    padding-top: 30px;
+    padding-left: 20px;
+    background: #707070;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Patrick Mckenzie quote */
+
+#quotes .cards .card-box:nth-of-type(4) .card:nth-of-type(1) {
+    height: 95px;
+    padding-top: 30px;
+    padding-left: 20px;
+    background: linear-gradient(to bottom, rgba(142,141,211,0.8) 40%, rgba(142,141,211,0.8)), url('photos/person-5.jpg');
+    background-size: cover;
+    background-position: top;
+}
+
+/* Patrick Mckenzie */
+#quotes .cards .card-box:nth-of-type(4) .card:nth-of-type(2) {
+    height: 295px;
+    padding-top: 30px;
+    padding-left: 20px;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.3) 40%, rgba(255,80,80,0.8)), url('photos/person-4.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* end of specify custom cards width */
+
+#quotes .cards .card-box .card .card-title {
+    margin-bottom: 15px;
+}
+
+#quotes .cards .card-box .card .card-txt {
+    font-size: 14px;
+}
+
+/* end of cards */
+
+/* start ofsee more */
+
+.see-more {
+    text-align: center;
+}
+
+.see-more a {
+    color: #7e7e7e;
+    text-decoration: underline;
+}
+
+/* end of see more */
+
+/* end section quotes */
